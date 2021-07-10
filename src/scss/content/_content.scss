@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: absolute;
+    background-color: $bckgColor-content;
+    top: 200px;
+    padding-top: 40px;
+    padding-left: 300px;
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 100px;
+
+    @media (min-width: 576px) and (max-width: 992px){
+        padding-left: 242px;
+        padding-right: 0px;
+        &._close{
+            padding-left: 108px;
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 575px){
+        padding-left: 32px;
+        padding-right: 0;
+    }
+}

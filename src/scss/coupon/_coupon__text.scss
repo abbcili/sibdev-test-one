@@ -1,0 +1,16 @@
+.coupon__text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 0px 16px 15px;
+
+    @media (min-width: 576px) and (max-width: 992px) {
+        padding: 18px 0px 18px 35px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 18px 0px 18px 45px;
+    }
+}

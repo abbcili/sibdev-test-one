@@ -1,0 +1,14 @@
+.coupon__discount{
+    $textColor: #DF212D;
+
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 28px;
+    color: $textColor;
+    text-transform: uppercase;
+
+    @media (max-width: 576px) {
+        font-size: 28px;
+    }
+}

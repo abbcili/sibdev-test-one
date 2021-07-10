@@ -4,18 +4,17 @@
     font-size: 28px;
     font-weight: 600;
     text-align: left;
-    width: 100%;
-    margin-left: 120px;
+    width: 80%;
     margin-top: 40px;
 
     @media (min-width: 576px) and (max-width: 992px){
         text-align: right;
-        margin-right: 27px;
-        margin-left: 0;
     }
     @media (max-width: 575px){
-        text-align: right;
-        margin-right: 20px;
-        margin-left: 0;
+        text-align: right;      
+    }
+
+    &._hide{
+        display: none;
     }
 }

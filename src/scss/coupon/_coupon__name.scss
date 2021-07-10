@@ -1,0 +1,19 @@
+.coupon__name{
+    $textColor: rgba(0, 0, 0, 0.5);
+
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $textColor;
+    margin-top: 4px;
+    text-transform: uppercase;
+
+    @media (min-width: 576px) and (max-width: 992px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 12px;
+    }
+}

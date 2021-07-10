@@ -1,0 +1,35 @@
+@import 'coupon__text';
+@import 'coupon__place';
+@import 'coupon__status';
+@import 'coupon__discount';
+@import 'coupon__name';
+
+.coupon {
+    width: 347px;
+    height: 160px;
+    background-image: url('/src/scss/coupon/img/cover-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:hover{
+        background-image: url('/src/scss/coupon/img/hover-desktop.png');
+    }
+
+    @media (min-width: 576px) and (max-width: 992px){
+        background-image: url('/src/scss/coupon/img/cover-ipad.png');
+
+        &:hover{
+            background-image: url('/src/scss/coupon/img/hover-ipad.png');
+        }
+    }
+
+    @media (max-width: 576px){
+        background-image: url('/src/scss/coupon/img/cover-mobile.png');
+
+        &:hover{
+            background-image: url('/src/scss/coupon/img/hover-mobile.png');
+        }
+    }
+}
