@@ -1,0 +1,11 @@
+@import 'header__form';
+@import 'header__text';
+@import 'header__input';
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}

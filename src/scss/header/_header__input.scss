@@ -1,0 +1,25 @@
+.header__input{
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    height: 57px;
+    outline: none;
+    font-family: $openSans;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 44px;
+    background-image: url('/src/scss/header/img/search.png');
+    background-repeat: no-repeat;
+    background-position: left 18px center;
+
+    @media (min-width: 576px) and (max-width: 992px){
+        margin-left: 26px;
+    }
+
+    @media (max-width: 575px){
+        margin-left: 20px;
+    }
+}

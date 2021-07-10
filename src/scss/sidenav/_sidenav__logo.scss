@@ -1,37 +1,29 @@
 .sidenav__logo{
-    $desktopWidth: 121px;
-    $desktopHeight: 50px;
-    $ipadpWidth: 67px;
-    $ipadphHeight: 24px;
-    $topIndent: 41px;
-    $closeWidth: 25px;
-    $closeHeight: 24px;
-
-    width: $desktopWidth;
-    height: $desktopHeight;
-    margin-top: $topIndent;
+    width: 121px;
+    height: 50px;
+    margin-top: 41px;
     margin-bottom: 41px;
     background-image: url('/src/scss/sidenav/img/logo_desktop.png');
     background-repeat: no-repeat;
 
     @media (min-width: 576px) and (max-width: 992px){
-        width: $ipadpWidth;
-        height: $ipadphHeight;
-        margin-right: $desktopWidth - $desktopHeight;
+        width: 67px;
+        height: 24px;
+        margin-right: 96px;
         padding-bottom: 66px;
         background-image: url('/src/scss/sidenav/img/logo_ipad.png');
 
         &._close{
-            width: $closeWidth;
-            height: $closeHeight;
+            width: 25px;
+            height: 24px;
             margin-right: 41px;
             background-image: url('/src/scss/sidenav/img/logo_ipad-closed.png');
         }
     }
 
     @media (max-width: 575px){
-        width: $ipadpWidth;
-        height: $ipadphHeight;
+        width: 67px;
+        height: 24px;
         padding-bottom: 66px;
         margin-right: 105px;
         margin-left: 20px;

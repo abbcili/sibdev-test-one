@@ -1,7 +1,9 @@
 const sidenav = document.querySelector('.sidenav'),
     toggle = sidenav.querySelector('.sidenav__toggle'),
     logo = sidenav.querySelector('.sidenav__logo'),
-    link = sidenav.querySelectorAll('.sidenav__link');
+    link = sidenav.querySelectorAll('.sidenav__link'),
+    main = document.querySelector('.main'),
+    headerText = document.querySelector('.header__text');
 
     console.log(link)
 
@@ -11,6 +13,7 @@ toggle.addEventListener('click', () => {
         sidenav.classList.remove('_open');
         sidenav.classList.add('_close');
         logo.classList.add('_close')
+        main.classList.add('_wide')
 
         link.forEach(item => item.classList.add('_close'))
     } else {
@@ -19,6 +22,7 @@ toggle.addEventListener('click', () => {
         sidenav.classList.add('_open');
         logo.classList.remove('_close')
         link.forEach(item => item.classList.remove('_close'))
+        main.classList.remove('_wide')
     }
 })
 
@@ -27,6 +31,7 @@ link.forEach(item => {
         if(!item.classList.contains('_active')){
             link.forEach(item => item.classList.remove('_active'))
             item.classList.add('_active')
+            headerText.textContent = item.textContent;
         }
     })
 })
