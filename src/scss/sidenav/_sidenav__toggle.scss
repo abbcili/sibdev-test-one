@@ -1,0 +1,50 @@
+.sidenav__toggle{
+    @media (max-width: 992px){
+        position: absolute;
+        width: 48px;
+        height: 106px;
+        top: 0;
+        right: -46px;
+        background-image: url('/src/scss/sidenav/img/toggle.png');
+        cursor: pointer;
+        transition: transform .5s;
+
+        &::after,
+        &::before{
+            content: '';
+            background-color: black;
+            position: absolute;
+            width: 26px;
+            height: 2px;
+            left: 0;
+        }
+
+        &::before{
+            top: 43px;
+        }
+        &::after{
+            bottom: 43px;
+        }
+        &._active::after{
+            transform: rotate(45deg);
+            bottom: 52px;
+        }
+        &._active::before{
+            transform: rotate(-45deg);
+            top: 52px;
+        }
+
+        & span{
+            background-color: black;
+            position: absolute;
+            width: 26px;
+            height: 2px;
+            left: 0;
+            top: 52px; 
+        }
+
+        &._active span{
+            transform: scale(0);
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.sidenav__link{
+    $textColor-link: #333333;
+    $textActive-link: #34ABE0;
+    $borderActive: 2px solid $textActive-link;
+
+    $cotalogImg: '/src/scss/sidenav/img/catalog.png';
+    $healthImg: '/src/scss/sidenav/img/health.png';
+    $beautyImg: '/src/scss/sidenav/img/beauty.png';
+    $enjoyImg: '/src/scss/sidenav/img/enjoy.png';
+    $carImg: '/src/scss/sidenav/img/car.png';
+
+    $cotalogActiveImg: '/src/scss/sidenav/img/catalog-active.png';
+    $healthActiveImg: '/src/scss/sidenav/img/health-active.png';
+    $beautyActiveImg: '/src/scss/sidenav/img/beauty-active.png';
+    $enjoyActiveImg: '/src/scss/sidenav/img/enjoy-active.png';
+    $carActiveImg: '/src/scss/sidenav/img/car-active.png';
+
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+    padding-left: 76px;
+    margin-top: 19px;
+    margin-bottom: 23px;
+        
+    &:link{
+        color:$textColor-link;
+    }
+    &:visited {
+        color:$textColor-link; 
+    }
+    
+    &._catalogImg{
+        @include linkStyles($cotalogImg)
+    }
+    &._healthImg{
+        @include linkStyles($healthImg)
+    }
+    &._beautyImg{
+        @include linkStyles($beautyImg)
+    }
+    &._enjoiImg{
+        @include linkStyles($enjoyImg)
+    }
+    &._carImg{
+        @include linkStyles($carImg)
+    }
+
+    //active link styles
+    &._catalogImg._active{
+        @include linkStyles($cotalogActiveImg, 
+                            $borderActive, 
+                            $textActive-link);
+    }
+    &._healthImg._active{
+        @include linkStyles($healthActiveImg, 
+                            $borderActive, 
+                            $textActive-link)
+    }
+    &._beautyImg._active{
+        @include linkStyles($beautyActiveImg, 
+                            $borderActive, 
+                            $textActive-link)
+    }
+    &._enjoiImg._active{
+        @include linkStyles($enjoyActiveImg, 
+                            $borderActive, 
+                            $textActive-link)
+    }
+    &._carImg._active{
+        @include linkStyles($carActiveImg, 
+                            $borderActive, 
+                            $textActive-link)
+    }
+    @media (min-width: 576px) and (max-width: 992px){
+        &._close span{
+            font-size: 0;
+        }
+        &._close {
+            background-position:181px;
+        }
+
+        &._catalogImg{
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 575px){
+        padding-left: 19px;
+        margin-left: 10px;
+    }
+}

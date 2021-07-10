@@ -1,5 +1,9 @@
-$c: black;
+@import 'fonts';
+@import 'var';
+@import 'reset';
+@import 'global';
+@import 'mixins';
 
-body{
-    background-image: url('./img/catalog.png');
-}
+
+//blocks
+@import './sidenav/sidenav';

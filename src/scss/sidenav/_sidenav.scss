@@ -1,0 +1,46 @@
+@import 'sidenav__toggle';
+@import 'sidenav__link';
+@import 'sidenav__logo';
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bckgColor-sidenav;
+    height: 100%;
+    transition: transform .5s;
+
+    @media (min-width: 992px) {
+        width: 240px;
+    }
+
+    @media (min-width: 576px) and (max-width: 992px) {
+        &._open{
+            width: 246px;
+            transform: translateX(0);
+        }
+
+        &._close{
+            width: 246px;
+            align-items: flex-end;
+            transform: translateX(-142px);
+        }
+    }
+
+    @media (max-width: 575px) {
+        &._open{
+            width: 192px;
+            transform: translateX(0);
+        }
+
+        &._close{
+            width: 192px;
+            align-items: flex-end;
+            transform: translateX(-180px);
+        }
+    }
+}

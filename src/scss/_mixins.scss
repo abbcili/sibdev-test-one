@@ -1,0 +1,17 @@
+@mixin linkStyles ($image, $border: none, $color: #333333) {
+    background-image: url($image);
+    background-position: 41px;
+    background-repeat: no-repeat;
+    border-left: $border;
+    color: $color;
+
+    @media (min-width: 576px) and (max-width: 992px){
+        &._close {
+            background-position:181px;
+        }
+    }
+    @media (max-width: 575px){
+        background-image: none;
+        margin-right: 10px;
+    }
+}
