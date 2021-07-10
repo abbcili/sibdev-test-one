@@ -3,6 +3,7 @@
 @import 'coupon__status';
 @import 'coupon__discount';
 @import 'coupon__name';
+@import 'coupon_img';
 
 .coupon {
     width: 347px;
@@ -21,7 +22,7 @@
         background-image: url('/src/scss/coupon/img/cover-ipad.png');
 
         &:hover{
-            background-image: url('/src/scss/coupon/img/hover-ipad.png');
+            background-image:url('/src/scss/coupon/img/hover-ipad.png');
         }
     }
 

@@ -1,0 +1,41 @@
+.coupon__img{
+    height: 100%;
+    background-size: 130px 157px;
+    background-repeat: no-repeat;
+    background-position:right 7px center;
+
+    @media (min-width: 576px) and (max-width: 992px){
+        background-size: 104px 140px;
+        background-position:right 24px center;
+    }
+
+    @media (max-width: 576px){
+        background-size: 90px 129px;
+        background-position: right 39px center;
+    }
+}
+
+._probka_na_mira{
+    background-image: url('/src/scss/coupon/img/probka_na_mira.png');
+}
+._kino_nem{
+    background-image: url('/src/scss/coupon/img/kino_nem.png');
+}
+._mangosteen{
+    background-image: url('/src/scss/coupon/img/mangosteen.png');
+}
+._sushi_sell{
+    background-image: url('/src/scss/coupon/img/sushi_sell.png');
+}
+._telenok_tabaka{
+    background-image: url('/src/scss/coupon/img/telenok_tabaka.png');
+}
+._valery{
+    background-image: url('/src/scss/coupon/img/valery.png');
+}
+._aroma{
+    background-image: url('/src/scss/coupon/img/aroma.png');
+}
+._fire_food{
+    background-image: url('/src/scss/coupon/img/fire_food.png');
+}
